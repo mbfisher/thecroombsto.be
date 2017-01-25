@@ -3,15 +3,15 @@
   "version": "0.1.0",
   "private": true,
   "devDependencies": {
-    "concurrently": "^3.1.0",
-    "node-sass": "^4.3.0",
-    "react-scripts": "0.8.5"
+    "concurrently": "^3.1.0"
   },
   "dependencies": {
     "body-parser": "^1.16.0",
     "cookies-js": "^1.2.3",
+    "node-sass": "^4.3.0",
     "react": "^15.4.2",
     "react-dom": "^15.4.2",
+    "react-scripts": "0.8.5",
     "sendgrid": "^4.7.1"
   },
   "scripts": {
