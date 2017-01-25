@@ -21,6 +21,7 @@
     "build-css": "node-sass src/index.scss public/index.css",
     "dev": "concurrently \"react-scripts start\" \"nodemon -e scss -x 'npm run build-css'\"",
     "eject": "react-scripts eject",
-    "test": "react-scripts test --env=jsdom"
+    "test": "react-scripts test --env=jsdom",
+    "heroku-postinstall": "npm run build"
   }
 }
