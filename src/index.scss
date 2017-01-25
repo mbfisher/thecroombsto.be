@@ -68,7 +68,7 @@ p, li, h3, h4, h5 {
 }
 
 p, li {
-  font-size: 16px;
+  font-size: 18px;
 }
 
 p {
@@ -279,7 +279,7 @@ input.error:focus {
 }
 
 .page {
-  margin-top: 48px;
+  margin-top: 24px;
 }
 
 .page .page__title {
@@ -287,6 +287,17 @@ input.error:focus {
   padding: 128px 0;
   text-align: center;
   color: $gray;
+  margin-bottom: 24px;
+}
+
+@media (max-width: 400px) {
+  .page .page__title {
+    padding: 72px 0;
+  }
+}
+
+.page--venue .page__title {
+  background: $red;
 }
 
 .page--photos .page__title {
@@ -299,10 +310,6 @@ input.error:focus {
 
 .page--gifts .page__title {
   background: $yellow;
-}
-
-.page--ps .page__title {
-  background: $red;
 }
 
 .dodford-layout {
@@ -374,14 +381,14 @@ input.error:focus {
 
 .accommodation__hotel {
   text-align: center;
-}
-.accommodation__hotel a {
-  display: inline-block;
-}
+  a {
+    display: inline-block;
+  }
 
-.accommodation__hotel p {
-  font-style: italic;
-  text-align: center;
+  p {
+    font-style: italic;
+    text-align: center;
+  }
 }
 
 .accommodation__hotels__staverton a {
@@ -446,4 +453,9 @@ input.error:focus {
       margin-left: 0;
     }
   }
+}
+
+.venue__map {
+  margin: 0 auto;
+  width: 600px;
 }

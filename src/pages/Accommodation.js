@@ -7,9 +7,63 @@ export default function Accommodation() {
       <div className="container">
         <div className="row">
           <div className="twelve columns">
+            <p>Although the hotel is beautiful, we recognise that the rooms are quite expensive. So we have put together
+              some additional accommodation information that may be more suitable:</p>
+
+            <p>Rudding Holiday Park - onsite, there are some alternatives, including; luxury lodges (for larger groups),
+              cottages and a caravan park. For more information, visit
+              the <a href="https://www.ruddingpark.co.uk/" target="_black">Rudding Park website</a>.</p>
+
+            <p>Rudding Park is about 10 minutes drive from the centre of Harrogate where there are some alternative places to stay including;</p>
           </div>
         </div>
+
+        <div className="row accommodation__hotels">
+          <div className="six columns">
+            <Hotel name="The Innkeeper's Lodge" distance={1.5} cost={75}
+                   url="https://www.innkeeperslodge.com/harrogate-west-beckwith-knowle/"
+                   img="http://www.innkeeperslodge.com/images/lodge_images/gallery/harrogate-west2.jpg" />
+          </div>
+          <div className="six columns">
+            <Hotel name="The Crown Hotel" distance={3.8} cost={80}
+                   url="http://www.crownhotelharrogate.com/"
+                   img="http://www.crownhotelharrogate.com/CrownHotel/media/images/Room-245-The-Crown-Hotel-HGT.jpg"/>
+          </div>
+        </div>
+        <div className="row accommodation__hotels">
+          <div className="six columns">
+            <Hotel name="White Heart Hotel" distance={3.7} cost={80}
+                   url="http://www.whiteharthotelharrogate.com/"
+                   img="http://www.whiteharthotelharrogate.com/_caches/_image/fit_interlacedmiddlecentre/640x480/userfile/whitehart/white-hart-hotel-harrogate-north-yorkshire-classic-double-bedroom.jpg"/>
+          </div>
+          <div className="six columns">
+            <Hotel name="Holiday Inn" distance={3.6} cost={160}
+                   url="https://www.ihg.com/holidayinn/hotels/gb/en/harrogate/hrtuk/hoteldetail"
+                   img="http://ihg.scene7.com/is/image/ihg/holiday-inn-harrogate-3801802101-2x1?hei=284" />
+          </div>
+        </div>
+        <div className="row">
+          <p className="text--center">(all details above were found using Booking.com)</p>
+        </div>
+        {/*1.     The Inkeeper’s lodge - Harrogate (1.5miles away) – rooms for about £75 per night*/}
+
+        {/*2.     The Crown Hotel – Harrogate (3.8 miles away) – rooms for about £80 per night*/}
+
+        {/*3.     White Heart Hotel – Harrogate (3.7 miles away) – rooms for about £80 per night*/}
+
+        {/*4.     Holiday Inn – Harrogate (3.6 miles away) – rooms for about £160 per night*/}
+
+
       </div>
     </div>
   );
 }
+
+const Hotel = ({ name, distance, cost, url, img }) => (
+  <div className="accommodation__hotel">
+    <h5><a href={url} target="_blank">{name}</a></h5>
+    <h6>{distance} miles away</h6>
+    <img src={img} width={270} height={180} role="presentation" />
+    <p>~£{cost} per night</p>
+  </div>
+);
