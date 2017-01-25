@@ -255,6 +255,34 @@ nav a:hover {
   }
 }
 
+.invitation__form {
+  p {
+    text-align: center;
+  }
+
+  textarea {
+    width: 600px;
+    height: 200px;
+    @include font-serif();
+    font-size: 16px;
+    color: #666;
+  }
+
+  .success {
+    color: #3c763d;
+    background-color: #dff0d8;
+    border-color: #d6e9c6;
+    border-radius: 4px;
+  }
+
+  .error {
+    color: #a94442;
+    background-color: #f2dede;
+    border: 1px solid #ebccd1;
+    border-radius: 4px;
+  }
+}
+
 input.error {
   border-color: #de5842;
   background: rgb(255, 225, 230);
