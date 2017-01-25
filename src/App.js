@@ -1,18 +1,20 @@
-import React, { Component } from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React, {Component} from 'react';
+import MyInvitation from './pages/MyInvitation';
+import Accommodation from './pages/Accommodation';
+import Venue from './pages/Venue';
 
 class App extends Component {
   render() {
     return (
-      <div className="App">
-        <div className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <h2>Welcome to React</h2>
+      <div>
+        <div className="content">
+          <div id="invitation"><MyInvitation /></div>
+          <Venue />
+          <Accommodation />
+          {/*<div id="accommodation"><Accommodation invitation={this.props.invitation}/></div>*/}
+          {/*<div id="photos"><Photos invitation={this.props.invitation}/></div>*/}
+          {/*<div id="ps"><PS invitation={this.props.invitation}/></div>*/}
         </div>
-        <p className="App-intro">
-          To get started, edit <code>src/App.js</code> and save to reload.
-        </p>
       </div>
     );
   }

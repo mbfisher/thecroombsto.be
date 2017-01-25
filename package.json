@@ -3,6 +3,8 @@
   "version": "0.1.0",
   "private": true,
   "devDependencies": {
+    "concurrently": "^3.1.0",
+    "node-sass": "^4.3.0",
     "react-scripts": "0.8.5"
   },
   "dependencies": {
@@ -13,6 +15,9 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test --env=jsdom",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "build-css": "node-sass src/index.scss public/index.css",
+    "watch-css": "nodemon -e scss -x \"npm run build-css\"",
+    "dev": "concurrently \"npm start\" \"npm run watch-css\""
   }
 }
