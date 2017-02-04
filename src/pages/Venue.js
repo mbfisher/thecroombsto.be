@@ -1,5 +1,7 @@
 import React from 'react';
 
+import './Venue.scss';
+
 export default function Venue() {
   return (
     <div className="page page--venue">
@@ -21,7 +23,7 @@ export default function Venue() {
       </div>
 
       <div className="row">
-        <div className="twelve columns dodford-layout">
+        <div className="twelve columns venue__pic">
           <img src="https://www.ruddingpark.co.uk/media/1554/1h-gallery-wd66-rt.jpg" role="presentation" />
         </div>
       </div>

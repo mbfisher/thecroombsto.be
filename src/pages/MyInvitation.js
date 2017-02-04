@@ -1,6 +1,8 @@
 import React from 'react';
 import Cookies from 'cookies-js';
 
+import './MyInvitation.scss';
+
 export default class MyInvitation extends React.Component {
   cookieName = 'rsvp';
 
@@ -64,37 +66,29 @@ export default class MyInvitation extends React.Component {
 
   render() {
     return (
-      <div className="container">
-        <div className="row invitation__greeting">
-          <div className="twelve columns">
-            <span className="text-blue">Beautiful Bride</span><br/>
-            <span className="text-green">Handsome Groom</span><br/>
-            <span className="text-yellow">Booze, food &amp; bad dance moves</span><br/>
-            <span className="text-red"><strong>You in or what?</strong></span><br/>
-            <span className="date">Sunday 6th August 2016</span>
+      <div>
+        <div className="banner">
+          <div className="banner__text-wrapper">
+            <h1>Ben and Rebecca</h1>
+            <h2>06.08.17</h2>
           </div>
         </div>
-        <hr/>
-        <div className="row">
-          <div className="twelve columns">
-            <h2>My Invitation</h2>
+        <div className="container">
+          <div className="row">
+            <div className="twelve columns">
+              <h2>My Invitation</h2>
+              <p>Please use the box below to RSVP:</p>
 
-            <p>All of the wedding celebrations will take place at Rudding Park and we will be staying in the main hotel
-              there on the 5th, 6th and 7th of August.</p>
+              <form className="invitation__rsvp" onSubmit={this.onSubmit}>
+                <p><textarea name="rsvp" rows={10} cols={30} value={this.state.rsvp} onChange={this.onRsvpChange} placeholder={this.defaultRsvp}/></p>
+                <p><button type="submit">{this.state.loading ? <img src="/loading.svg" width="30px" style={{padding: "3px 0"}} /> : 'Submit'}</button></p>
+                {this.state.error && <p className="error">Oops, we couldn't process your RSVP! Please try again.</p>}
+                {this.state.success && <p className="success">Thanks for your RSVP! If you forgot something, just update the text and click 'Submit' again.</p>}
+              </form>
 
-            <p>On the evening of the 5th, we have booked a large room (next to the bar) and will be there from 8pm
-              onwards.
-              If you would like to join us for a drink then you would be more than welcome. It’s going to be a relaxed
-              social occasion.</p>
-
-            <p>Please use the box below to RSVP:</p>
-
-            <form className="invitation__form" onSubmit={this.onSubmit}>
-              <p><textarea name="rsvp" rows={10} cols={30} value={this.state.rsvp} onChange={this.onRsvpChange} placeholder={this.defaultRsvp}/></p>
-              <p><button type="submit">{this.state.loading ? <img src="/loading.svg" width="30px" style={{padding: "3px 0"}} /> : 'Submit'}</button></p>
-              {this.state.error && <p className="error">Oops, we couldn't process your RSVP! Please try again.</p>}
-              {this.state.success && <p className="success">Thanks for your RSVP! If you forgot something, just update the text and click 'Submit' again.</p>}
-            </form>
+              <p>All wedding celebrations will take place at Rudding Park in the main hotel. The night before the wedding,
+                we have booked the Mackaness Room for some informal drinks, and you would be more than welcome to join us.</p>
+            </div>
           </div>
         </div>
       </div>

@@ -1,0 +1,12 @@
+.venue__pic {
+  margin-bottom: 24px;
+  img {
+    width: 100%;
+  }
+}
+
+@media (max-width: 900px) {
+  .venue__pic {
+    display: none;
+  }
+}

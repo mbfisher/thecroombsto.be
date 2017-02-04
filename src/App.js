@@ -3,6 +3,7 @@ import MyInvitation from './pages/MyInvitation';
 import Accommodation from './pages/Accommodation';
 import Venue from './pages/Venue';
 import Photos from './pages/Photos';
+import Gifts from './pages/Gifts';
 
 class App extends Component {
   render() {
@@ -13,9 +14,7 @@ class App extends Component {
           <Venue />
           <Accommodation />
           <Photos />
-          {/*<div id="accommodation"><Accommodation invitation={this.props.invitation}/></div>*/}
-          {/*<div id="photos"><Photos invitation={this.props.invitation}/></div>*/}
-          {/*<div id="ps"><PS invitation={this.props.invitation}/></div>*/}
+          <Gifts />
         </div>
       </div>
     );

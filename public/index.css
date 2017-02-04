@@ -12,7 +12,7 @@ body {
 
 h1 {
   font-family: 'Lobster', cursive;
-  font-size: 48px; }
+  font-size: 60px; }
 
 @media (max-width: 400px) {
   h1 {
@@ -80,147 +80,6 @@ input[type=text] {
 .text--center {
   text-align: center; }
 
-.nav-headroom {
-  height: 87px; }
-
-.nav-wrapper {
-  position: fixed;
-  top: 0;
-  left: 0;
-  right: 0; }
-
-nav {
-  background: #f9f9f9;
-  z-index: 99; }
-
-nav a {
-  text-align: center;
-  color: #c9c9c9;
-  text-decoration: none;
-  font-family: 'Lobster', cursive;
-  font-size: 24px;
-  display: inline-block;
-  box-sizing: border-box;
-  width: 100%; }
-
-.nav--full {
-  width: 100%; }
-
-.nav--full a {
-  width: 20%;
-  padding: 24px 0;
-  border-bottom: 1px solid #e4e4e4; }
-
-.nav--groups .row, .nav--stack a {
-  border-bottom: 1px solid #e4e4e4; }
-
-.nav--groups a {
-  padding: 2px 0;
-  border-right: 1px solid #e4e4e4;
-  padding-right: 9%; }
-
-.nav__toggle a {
-  cursor: pointer; }
-
-.nav--stack, .nav--groups {
-  display: none; }
-
-.nav--stack .nav__items {
-  max-height: 0;
-  overflow: hidden;
-  transition: max-height 0.2s ease-in-out; }
-
-.nav--stack--show .nav__items {
-  max-height: 200px; }
-
-@media (max-width: 900px) {
-  .nav--groups {
-    display: block; }
-  .nav--full {
-    display: none; } }
-
-.headroom-wrapper {
-  height: 86px !important; }
-
-@media (max-width: 550px) {
-  .nav--groups {
-    display: none; }
-  .nav--stack {
-    display: block; }
-  .headroom-wrapper {
-    height: 39px !important; } }
-
-nav a.active {
-  color: #888888; }
-
-nav a:hover {
-  color: #888888; }
-
-.login form {
-  margin-top: 24px; }
-
-.intro {
-  text-align: center;
-  margin-top: 48px; }
-
-.intro__title h1 {
-  font-family: 'Lobster', cursive;
-  font-size: 60px; }
-
-.intro__date {
-  font-family: 'Quicksand', sans-serif; }
-
-.invitation__greeting {
-  text-align: center;
-  font-family: 'Quicksand', sans-serif;
-  font-size: 42px;
-  -webkit-margin-before: 0;
-  -webkit-margin-after: 0;
-  margin: 24px 0; }
-  .invitation__greeting .date {
-    display: inline-block;
-    font-family: 'Lobster', cursive;
-    padding: 36px 0 24px 0;
-    color: #ccc; }
-
-.invitation__form p {
-  text-align: center; }
-
-.invitation__form textarea {
-  width: 600px;
-  height: 200px;
-  font-family: 'Raleway', serif;
-  font-size: 16px;
-  color: #666; }
-
-.invitation__form .success {
-  color: #3c763d;
-  background-color: #dff0d8;
-  border-color: #d6e9c6;
-  border-radius: 4px; }
-
-.invitation__form .error {
-  color: #a94442;
-  background-color: #f2dede;
-  border: 1px solid #ebccd1;
-  border-radius: 4px; }
-
-input.error {
-  border-color: #de5842;
-  background: #ffe1e6;
-  transition: all 0.1s linear; }
-
-input.error:focus {
-  border-color: #de5842; }
-
-@media (max-width: 550px) {
-  .invitation__greeting {
-    font-size: 36px; } }
-
-@media (max-width: 400px) {
-  .invitation__greeting {
-    font-size: 33px; } }
-
 .page {
   margin-top: 24px; }
 
@@ -229,48 +88,12 @@ input.error:focus {
   padding: 128px 0;
   text-align: center;
   color: #f9f9f9;
-  margin-bottom: 24px; }
+  margin-bottom: 24px;
+  background: #a2d7d8; }
 
 @media (max-width: 400px) {
   .page .page__title {
     padding: 72px 0; } }
-
-.page--venue .page__title {
-  background: #de5842; }
-
-.page--photos .page__title {
-  background: #a2d7d8; }
-
-.page--accommodation .page__title {
-  background: #bfe1bf; }
-
-.page--gifts .page__title {
-  background: #fcd059; }
-
-.dodford-layout {
-  margin-bottom: 24px; }
-
-.dodford-layout img {
-  width: 100%; }
-
-@media (max-width: 900px) {
-  .dodford-layout {
-    display: none; } }
-
-.invitation__rsvp ul {
-  list-style: none; }
-
-.poem {
-  font-family: 'Quicksand', sans-serif;
-  text-align: center;
-  font-style: italic;
-  font-size: 18px; }
-
-.poem__author {
-  display: inline-block;
-  font-size: 15px;
-  padding: 15px 0 0 114px;
-  font-family: 'Schoolbell', sans-serif; }
 
 .push {
   position: fixed;

@@ -33,7 +33,7 @@ body {
 
 h1 {
   @include font-cursive();
-  font-size: 48px;
+  font-size: 60px;
 }
 
 @media (max-width: 400px) {
@@ -122,190 +122,6 @@ input[type=text] {
   text-align: center;
 }
 
-.nav-headroom {
-  height: 87px;
-}
-
-.nav-wrapper {
-  position: fixed;
-  top: 0;
-  left: 0;
-  right: 0;
-
-}
-
-nav {
-  background: #f9f9f9;
-  z-index: 99;
-}
-
-nav a {
-  text-align: center;
-  color: rgb(201, 201, 201);
-  text-decoration: none;
-  @include font-cursive();
-  font-size: 24px;
-  display: inline-block;
-  box-sizing: border-box;
-  width: 100%;
-}
-
-.nav--full {
-  width: 100%;
-}
-
-.nav--full a {
-  width: 20%;
-  padding: 24px 0;
-  border-bottom: 1px solid #e4e4e4;
-}
-
-.nav--groups .row, .nav--stack a {
-  border-bottom: 1px solid #e4e4e4;
-}
-
-.nav--groups a {
-  padding: 2px 0;
-  border-right: 1px solid #e4e4e4;
-  padding-right: 9%;
-}
-
-.nav__toggle a {
-  cursor: pointer;
-}
-
-.nav--stack, .nav--groups {
-  display: none;
-}
-
-.nav--stack .nav__items {
-  max-height: 0;
-  overflow: hidden;
-  transition: max-height 0.2s ease-in-out;
-}
-
-.nav--stack--show .nav__items {
-  max-height: 200px;
-}
-
-@media (max-width: 900px) {
-  .nav--groups {
-    display: block;
-  }
-  .nav--full {
-    display: none;
-  }
-}
-
-.headroom-wrapper {
-  height: 86px !important;
-}
-
-@media (max-width: 550px) {
-  .nav--groups {
-    display: none;
-  }
-  .nav--stack {
-    display: block;
-  }
-  .headroom-wrapper {
-    height: 39px !important;
-  }
-}
-
-nav a.active {
-  color: rgb(136, 136, 136);
-}
-
-nav a:hover {
-  color: rgb(136, 136, 136);
-}
-
-.login form {
-  margin-top: 24px;
-}
-
-.intro {
-  text-align: center;
-  margin-top: 48px;
-}
-
-.intro__title h1 {
-  @include font-cursive();
-  font-size: 60px;
-}
-
-.intro__date {
-  @include font-sans();
-}
-
-.invitation__greeting {
-  text-align: center;
-  @include font-sans();
-  font-size: 42px;
-  -webkit-margin-before: 0;
-  -webkit-margin-after: 0;
-  margin: 24px 0;
-
-  .date {
-    display: inline-block;
-    @include font-cursive();
-    padding: 36px 0 24px 0;
-    color: #ccc;
-  }
-}
-
-.invitation__form {
-  p {
-    text-align: center;
-  }
-
-  textarea {
-    width: 600px;
-    height: 200px;
-    @include font-serif();
-    font-size: 16px;
-    color: #666;
-  }
-
-  .success {
-    color: #3c763d;
-    background-color: #dff0d8;
-    border-color: #d6e9c6;
-    border-radius: 4px;
-  }
-
-  .error {
-    color: #a94442;
-    background-color: #f2dede;
-    border: 1px solid #ebccd1;
-    border-radius: 4px;
-  }
-}
-
-input.error {
-  border-color: #de5842;
-  background: rgb(255, 225, 230);
-  transition: all 0.1s linear;
-}
-
-input.error:focus {
-  border-color: #de5842;
-}
-
-
-@media (max-width: 550px) {
-  .invitation__greeting {
-    font-size: 36px;
-  }
-}
-
-@media (max-width: 400px) {
-  .invitation__greeting {
-    font-size: 33px;
-  }
-}
-
 .page {
   margin-top: 24px;
 }
@@ -316,6 +132,7 @@ input.error:focus {
   text-align: center;
   color: $gray;
   margin-bottom: 24px;
+  background: $blue;
 }
 
 @media (max-width: 400px) {
@@ -324,53 +141,23 @@ input.error:focus {
   }
 }
 
-.page--venue .page__title {
-  background: $red;
-}
+//.page--venue .page__title {
+//  background: $red;
+//}
+//
+//.page--photos .page__title {
+//  background: $blue;
+//}
+//
+//.page--accommodation .page__title {
+//  background: $green;
+//}
+//
+//.page--gifts .page__title {
+//  background: $yellow;
+//}
 
-.page--photos .page__title {
-  background: $blue;
-}
 
-.page--accommodation .page__title {
-  background: $green;
-}
-
-.page--gifts .page__title {
-  background: $yellow;
-}
-
-.dodford-layout {
-  margin-bottom: 24px;
-}
-
-.dodford-layout img {
-  width: 100%;
-}
-
-@media (max-width: 900px) {
-  .dodford-layout {
-    display: none;
-  }
-}
-
-.invitation__rsvp ul {
-  list-style: none;
-}
-
-.poem {
-  @include font-sans();
-  text-align: center;
-  font-style: italic;
-  font-size: 18px;
-}
-
-.poem__author {
-  display: inline-block;
-  font-size: 15px;
-  padding: 15px 0 0 114px;
-  font-family: 'Schoolbell', sans-serif;
-}
 
 .push {
   position: fixed;
