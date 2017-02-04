@@ -6,14 +6,6 @@ $yellow: #fcd059;
 $red: #de5842;
 $gray: #f9f9f9;
 
-/*
-blue a2d7d8
-green bfe1bf
-gray ededea
-yellow fcd059
-red de5842
-*/
-
 @mixin font-serif {
   font-family: 'Raleway', serif;
 }
@@ -157,120 +149,7 @@ input[type=text] {
 //  background: $yellow;
 //}
 
-
-
-.push {
-  position: fixed;
-  bottom: 25px;
-  right: 25px;
-  background: $green;
-  border: 1px solid #fff;
-  padding: 6px 12px;
-  border-radius: 6px;
-  color: #fff;
-  opacity: 0;
-  @include font-sans();
-  transition: opacity .25s ease-in-out;
-}
-
-.push__close a {
-  color: #fff;
-  font-size: 18px;
-  line-height: 12px;
-  vertical-align: middle;
-}
-
-.breakfast .breakfast__option {
-  text-align: center;
-}
-
-.photos__downloads .columns {
-  text-align: center;
-}
-
-@media (max-width: 550px) {
-  .photos__downloads .columns {
-    padding-top: 18px;
-  }
-}
-
-.accommodation__hotel {
-  text-align: center;
-  a {
-    display: inline-block;
-  }
-
-  p {
-    font-style: italic;
-    text-align: center;
-  }
-}
-
-.accommodation__hotels__staverton a {
-  background-size: 150px 135px;
-  width: 150px;
-  height: 135px;
-}
-.accommodation__hotels__premier a {
-  background-size: 180px 135px;
-  width: 180px;
-  height: 135px;
-}
-.accommodation__hotels__holiday a {
-  background-size: 170px 136px;
-  width: 170px;
-  height: 136px;
-}
-.accommodation__hotels__marriott a {
-  background-size: 275px 136px;
-  background-position-x: -69px;
-  width: 133px;
-  height: 136px;
-}
-
-@media (max-width: 900px) {
-  .accommodation__hotels__staverton a {
-    background-size: 110px 94px;
-    width: 110px;
-    height: 94px;
-  }
-  .accommodation__hotels__premier a {
-    background-size: 130px 94px;
-    width: 130px;
-    height: 94px;
-  }
-  .accommodation__hotels__holiday a {
-    background-size: 142px 100px;
-    width: 142px;
-    height: 100px;
-  }
-  .accommodation__hotels__marriott a {
-    background-size: 236px 120px;
-    background-position-y: -13px;
-    width: 103px;
-    height: 96px;
-  }
-}
-
-@media (max-width: 650px) {
-  .accommodation__hotels {
-    .column, .columns {
-      width: 100%;
-      float: left;
-      box-sizing: border-box;
-    }
-  }
-}
-
-@media (min-width: 550px) and (max-width: 650px) {
-  .accommodation__hotels {
-    .six.columns {
-      margin-left: 0;
-    }
-  }
-}
-
-.venue__map {
-  margin: 0 auto;
-  width: 600px;
-}
+@import "pages/MyInvitation";
+@import "pages/Venue";
+@import "pages/Photos";
+@import "pages/Accommodation";

@@ -1,8 +1,6 @@
 import React from 'react';
 import Cookies from 'cookies-js';
 
-import './MyInvitation.scss';
-
 export default class MyInvitation extends React.Component {
   cookieName = 'rsvp';
 

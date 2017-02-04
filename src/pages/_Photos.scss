@@ -1,0 +1,9 @@
+.photos__downloads .columns {
+  text-align: center;
+}
+
+@media (max-width: 550px) {
+  .photos__downloads .columns {
+    padding-top: 18px;
+  }
+}

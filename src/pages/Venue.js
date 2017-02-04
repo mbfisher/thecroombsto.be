@@ -1,7 +1,5 @@
 import React from 'react';
 
-import './Venue.scss';
-
 export default function Venue() {
   return (
     <div className="page page--venue">
