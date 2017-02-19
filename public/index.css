@@ -88,6 +88,10 @@ input[type=text] {
   .page .page__title {
     padding: 72px 0; } }
 
+@media (min-width: 550px) {
+  .container {
+    width: 90%; } }
+
 .banner {
   background-image: url("/banner.jpg");
   width: 100%;
@@ -104,10 +108,10 @@ input[type=text] {
     .banner .banner__text-wrapper h1, .banner .banner__text-wrapper h2 {
       color: #a2d7d8; }
 
-.invitation__rsvp p {
+.invitation .rsvp p {
   text-align: center; }
 
-.invitation__rsvp textarea {
+.invitation .rsvp textarea {
   width: 90%;
   max-width: 600px;
   height: 200px;
@@ -115,17 +119,36 @@ input[type=text] {
   font-size: 16px;
   color: #666; }
 
-.invitation__rsvp .success {
+.invitation .rsvp .success {
   color: #3c763d;
   background-color: #dff0d8;
   border-color: #d6e9c6;
   border-radius: 4px; }
 
-.invitation__rsvp .error {
+.invitation .rsvp .error {
   color: #a94442;
   background-color: #f2dede;
   border: 1px solid #ebccd1;
   border-radius: 4px; }
+
+.invitation .order-of-service {
+  margin-bottom: 2em;
+  text-align: center; }
+  .invitation .order-of-service p {
+    text-align: center; }
+  .invitation .order-of-service .evening {
+    padding-top: 3em; }
+  @media (max-width: 550px) {
+    .invitation .order-of-service .evening {
+      padding: 0; }
+    .invitation .order-of-service .columns {
+      margin-bottom: 3em; }
+      .invitation .order-of-service .columns:last-child {
+        margin-bottom: 0; } }
+
+.invitation .night-before p {
+  text-align: center;
+  font-style: italic; }
 
 .venue__pic {
   margin-bottom: 24px; }

@@ -149,6 +149,12 @@ input[type=text] {
 //  background: $yellow;
 //}
 
+@media (min-width: 550px) {
+  .container {
+    width: 90%;
+  }
+}
+
 @import "pages/MyInvitation";
 @import "pages/Venue";
 @import "pages/Photos";
