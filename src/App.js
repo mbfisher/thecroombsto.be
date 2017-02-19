@@ -3,7 +3,7 @@ import MyInvitation from './pages/MyInvitation';
 import Accommodation from './pages/Accommodation';
 import Venue from './pages/Venue';
 import Photos from './pages/Photos';
-import Gifts from './pages/Gifts';
+import PS from './pages/PS';
 
 class App extends Component {
   render() {
@@ -14,7 +14,7 @@ class App extends Component {
           <Venue />
           <Accommodation />
           <Photos />
-          <Gifts />
+          <PS />
         </div>
       </div>
     );

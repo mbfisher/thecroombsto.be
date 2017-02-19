@@ -7,16 +7,10 @@ export default function Accommodation() {
       <div className="container">
         <div className="row">
           <div className="twelve columns">
-            <p>If you would like to book a room at the hotel please click on the link which will direct you to the
-              website. <a href="https://www.ruddingpark.co.uk">https://www.ruddingpark.co.uk</a> or you may find a
-              better rate on <a href="https://booking.com">booking.com</a>.</p>
+            <p>If you would like to stay at Rudding Park please <a href="https://www.ruddingpark.co.uk">visit their website</a>.
+              They have rooms, cottages, luxury lodges for larger groups and a caravan park.</p>
 
-            <p>Rudding Holiday Park - onsite, there are some alternatives, including; luxury lodges (for larger groups),
-              cottages and a caravan park. For more information, visit
-              the <a href="https://www.ruddingpark.co.uk/" target="_black">Rudding Park website</a>.</p>
-
-            <p>Although the hotel is beautiful, we recognise that the rooms are quite expensive. So we have put together
-              some additional accommodation information that may be more suitable:</p>
+            <p>Although the hotel is beautiful, we recognise that the rooms are quite expensive. There are several alternatives nearby:</p>
           </div>
         </div>
 

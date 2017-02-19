@@ -81,17 +81,46 @@ ul {
 
 form {
   margin-bottom: 0;
+
+  label {
+    color: #555;
+    @include font-serif();
+  }
+
+  input[type=text] {
+    @include font-serif();
+    font-size: 18px;
+  }
+
+  p {
+    text-align: center;
+  }
+
+  textarea {
+    width: 90%;
+    max-width: 600px;
+    height: 200px;
+    @include font-serif();
+    font-size: 16px;
+    color: #666;
+  }
+
+  .success {
+    color: #3c763d;
+    background-color: #dff0d8;
+    border-color: #d6e9c6;
+    border-radius: 4px;
+  }
+
+  .error {
+    color: #a94442;
+    background-color: #f2dede;
+    border: 1px solid #ebccd1;
+    border-radius: 4px;
+  }
 }
 
-label {
-  color: #555;
-  @include font-serif();
-}
 
-input[type=text] {
-  @include font-serif();
-  font-size: 18px;
-}
 
 .text-blue, .text-blue--hover:hover, .text-blue--active:active {
   color: $blue;
@@ -159,3 +188,4 @@ input[type=text] {
 @import "pages/Venue";
 @import "pages/Photos";
 @import "pages/Accommodation";
+@import "pages/PS";

@@ -46,14 +46,31 @@ ul {
 
 form {
   margin-bottom: 0; }
-
-label {
-  color: #555;
-  font-family: 'Raleway', serif; }
-
-input[type=text] {
-  font-family: 'Raleway', serif;
-  font-size: 18px; }
+  form label {
+    color: #555;
+    font-family: 'Raleway', serif; }
+  form input[type=text] {
+    font-family: 'Raleway', serif;
+    font-size: 18px; }
+  form p {
+    text-align: center; }
+  form textarea {
+    width: 90%;
+    max-width: 600px;
+    height: 200px;
+    font-family: 'Raleway', serif;
+    font-size: 16px;
+    color: #666; }
+  form .success {
+    color: #3c763d;
+    background-color: #dff0d8;
+    border-color: #d6e9c6;
+    border-radius: 4px; }
+  form .error {
+    color: #a94442;
+    background-color: #f2dede;
+    border: 1px solid #ebccd1;
+    border-radius: 4px; }
 
 .text-blue, .text-blue--hover:hover, .text-blue--active:active {
   color: #a2d7d8; }
@@ -107,29 +124,6 @@ input[type=text] {
     text-align: center; }
     .banner .banner__text-wrapper h1, .banner .banner__text-wrapper h2 {
       color: #a2d7d8; }
-
-.invitation .rsvp p {
-  text-align: center; }
-
-.invitation .rsvp textarea {
-  width: 90%;
-  max-width: 600px;
-  height: 200px;
-  font-family: 'Raleway', serif;
-  font-size: 16px;
-  color: #666; }
-
-.invitation .rsvp .success {
-  color: #3c763d;
-  background-color: #dff0d8;
-  border-color: #d6e9c6;
-  border-radius: 4px; }
-
-.invitation .rsvp .error {
-  color: #a94442;
-  background-color: #f2dede;
-  border: 1px solid #ebccd1;
-  border-radius: 4px; }
 
 .invitation .order-of-service {
   margin-bottom: 2em;
@@ -187,3 +181,6 @@ input[type=text] {
 @media (min-width: 550px) and (max-width: 650px) {
   .accommodation__hotels .six.columns {
     margin-left: 0; } }
+
+.page--ps h3, .page--ps h4 {
+  text-align: center; }
