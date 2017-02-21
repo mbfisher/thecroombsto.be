@@ -1,10 +1,15 @@
-@import url(http://fonts.googleapis.com/css?family=Raleway|Poiret+One|Quicksand:400,700|Lobster|Schoolbell);
+@import url(http://fonts.googleapis.com/css?family=Raleway|Quicksand:400,700);
 
 $blue: #a2d7d8;
 $green: #bfe1bf;
 $yellow: #fcd059;
 $red: #de5842;
 $gray: #f9f9f9;
+
+@font-face {
+  font-family: 'Bombshell Pro';
+  src: url('/Bombshell Pro.woff') format('woff');
+}
 
 @mixin font-serif {
   font-family: 'Raleway', serif;
@@ -30,7 +35,7 @@ h1 {
 
 @media (max-width: 400px) {
   h1 {
-    font-size: 36px;
+    font-size: 48px;
   }
 }
 

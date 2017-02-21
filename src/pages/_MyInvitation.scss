@@ -21,7 +21,7 @@
   .banner__text-wrapper {
     position: absolute;
     top: 66%;
-    width: 50%;
+    width: 100%;
     text-align: center;
 
     @media (max-width: 1000px) {
@@ -29,13 +29,17 @@
     }
 
     h1, h2 {
+      font-family: 'Bombshell Pro', serif;
+      font-weight: bold;
       color: $blue;
     }
 
-    // Override skeleton font size at 400px
-    @media (max-width: 400px) {
-      h1 {
+    h1 {
+      @media (min-width: 480px) and (max-width: 600px) {
         font-size: 48px;
+      }
+      @media (max-width: 480px) {
+        font-size: 36px;
       }
     }
   }

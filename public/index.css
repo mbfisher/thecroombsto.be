@@ -1,4 +1,8 @@
-@import url(http://fonts.googleapis.com/css?family=Raleway|Poiret+One|Quicksand:400,700|Lobster|Schoolbell);
+@import url(http://fonts.googleapis.com/css?family=Raleway|Quicksand:400,700);
+@font-face {
+  font-family: 'Bombshell Pro';
+  src: url("/Bombshell Pro.woff") format("woff"); }
+
 body {
   margin: 0;
   background: #f9f9f9; }
@@ -9,7 +13,7 @@ h1 {
 
 @media (max-width: 400px) {
   h1 {
-    font-size: 36px; } }
+    font-size: 48px; } }
 
 h2 {
   font-family: 'Quicksand', sans-serif;
@@ -127,16 +131,21 @@ form {
   .banner .banner__text-wrapper {
     position: absolute;
     top: 66%;
-    width: 50%;
+    width: 100%;
     text-align: center; }
     @media (max-width: 1000px) {
       .banner .banner__text-wrapper {
         width: 100%; } }
     .banner .banner__text-wrapper h1, .banner .banner__text-wrapper h2 {
+      font-family: 'Bombshell Pro', serif;
+      font-weight: bold;
       color: #a2d7d8; }
-    @media (max-width: 400px) {
+    @media (min-width: 480px) and (max-width: 600px) {
       .banner .banner__text-wrapper h1 {
         font-size: 48px; } }
+    @media (max-width: 480px) {
+      .banner .banner__text-wrapper h1 {
+        font-size: 36px; } }
 
 .invitation {
   text-align: center; }
@@ -177,7 +186,8 @@ form {
 
 .venue__map {
   margin: 0 auto;
-  width: 600px; }
+  width: 95%;
+  max-width: 600px; }
 
 .photos__downloads .columns {
   text-align: center; }

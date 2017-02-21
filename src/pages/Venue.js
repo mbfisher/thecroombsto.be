@@ -26,12 +26,8 @@ export default function Venue() {
         </div>
       </div>
 
-      <div className="row">
-        <div className="twelve columns">
-          <div className="venue__map">
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d18773.18477774327!2d-1.5098797617333695!3d53.973516535249225!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4879519a142cdf57%3A0xcdaaafbf8e064753!2sRudding+Park!5e0!3m2!1sen!2suk!4v1485338774405" width="600" height="450" frameBorder="0" style={{ border: 0 }} allowFullScreen />
-          </div>
-        </div>
+      <div className="venue__map">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d18773.18477774327!2d-1.5098797617333695!3d53.973516535249225!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4879519a142cdf57%3A0xcdaaafbf8e064753!2sRudding+Park!5e0!3m2!1sen!2suk!4v1485338774405" width="100%" height="450" frameBorder="0" style={{ border: 0 }} allowFullScreen />
       </div>
     </div>
   );
