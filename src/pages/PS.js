@@ -7,6 +7,7 @@ const PS = () => (
     <div className="container">
       <div className="row">
         <div className="twelve columns">
+
           <h3>Gifts</h3>
           <p>It is your presence, not your presents, that is important to us. However, if you would like to give a
             gift please visit <a href="https://prezola.com">prezola.com</a>, click the "Buy a wedding gift" button and
@@ -16,20 +17,17 @@ const PS = () => (
 
           <h3>Music</h3>
           <p>Please use the box below to request a song to be played during the evening:</p>
-
           <EmailForm action="/music" placeholder="I'd like to hear:" />
-
           <hr/>
 
           <h3>Taxis</h3>
-          <p>There will be a taxi rank running from Dodford throughout the evening, more so when
-            the bar closes at 11pm.</p>
+          <p>If you require a taxi, here are a couple of local firms:</p>
+          <ul>
+            <li>Blueline Taxi - 01423 530830</li>
+            <li>Elite Taxi - 01423 538509</li>
+          </ul>
           <hr/>
 
-          <h3>Parking</h3>
-          <p>If you park your car at Dodford and then get a taxi to your hotel please note that
-            all cars must be collected by <strong>11am</strong> on the following morning.</p>
-          <hr/>
         </div>
       </div>
     </div>

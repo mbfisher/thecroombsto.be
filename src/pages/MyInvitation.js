@@ -4,6 +4,7 @@ import EmailForm from '../EmailForm';
 const  defaultRsvp = `Tell us:
 - Who's coming?
 - Do have any dietary requirements?
+- Are you coming to the night before celebrations?
 - Any other relevant information you want us to know?`;
 
 
@@ -19,6 +20,8 @@ const MyInvitation = () => (
       <div className="row">
         <div className="twelve columns">
           <h2>My Invitation</h2>
+
+          <p>All wedding celebrations will take place at Rudding Park, Harrogate.</p>
         </div>
       </div>
 
@@ -29,13 +32,13 @@ const MyInvitation = () => (
           <hr/>
           <p>Drinks reception & jazz</p>
           <hr />
-          <p>Wedding breakfast in the Ratcliffe Room</p>
+          <p>Wedding breakfast in the Radcliffe Room</p>
         </div>
 
         <div className="six columns">
           <h3>Evening</h3>
           <div className="evening">
-            <p>Arrive at the Ratcliffe Room at 7.30pm</p>
+            <p>Arrive at the Radcliffe Room at 7.30pm</p>
             <hr />
             <p>Canapés, drinks, casino & live music</p>
           </div>
@@ -44,7 +47,7 @@ const MyInvitation = () => (
 
       <div className="row">
         <div className="twelve columns night-before">
-          <p>The night before the wedding we have booked the Mackaness Room for some informal drinks; you would be more than welcome to join us.</p>
+          <p>The night before the wedding we have booked the Mackaness Room for some informal drinks at 8pm; you would be more than welcome to join us.</p>
         </div>
       </div>
 
