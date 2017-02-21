@@ -110,20 +110,33 @@ form {
     width: 90%; } }
 
 .banner {
-  background-image: url("/banner.jpg");
   width: 100%;
   height: 512px;
-  background-size: cover;
-  background-position-y: -180px;
+  background-repeat: no-repeat;
+  background-position: center;
   position: relative;
   margin-bottom: 3em; }
+  @media (min-width: 850px) {
+    .banner {
+      background-size: cover;
+      background-image: url("/banner.jpg"); } }
+  @media (max-width: 850px) {
+    .banner {
+      background-size: auto;
+      background-image: url("/banner-center.jpg"); } }
   .banner .banner__text-wrapper {
     position: absolute;
     top: 66%;
-    width: 40%;
+    width: 50%;
     text-align: center; }
+    @media (max-width: 1000px) {
+      .banner .banner__text-wrapper {
+        width: 100%; } }
     .banner .banner__text-wrapper h1, .banner .banner__text-wrapper h2 {
       color: #a2d7d8; }
+    @media (max-width: 400px) {
+      .banner .banner__text-wrapper h1 {
+        font-size: 48px; } }
 
 .invitation .order-of-service {
   margin-bottom: 2em;
@@ -132,13 +145,22 @@ form {
     text-align: center; }
   .invitation .order-of-service .evening {
     padding-top: 3em; }
-  @media (max-width: 550px) {
+  .invitation .order-of-service h3 {
+    margin-bottom: 1em; }
+  @media (max-width: 850px) {
     .invitation .order-of-service .evening {
       padding: 0; }
     .invitation .order-of-service .columns {
       margin-bottom: 3em; }
       .invitation .order-of-service .columns:last-child {
         margin-bottom: 0; } }
+  .invitation .order-of-service section {
+    width: 50%;
+    float: left; }
+    @media (max-width: 850px) {
+      .invitation .order-of-service section {
+        float: none;
+        margin: 0 auto; } }
 
 .invitation .night-before p {
   text-align: center;

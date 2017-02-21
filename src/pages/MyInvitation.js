@@ -26,23 +26,23 @@ const MyInvitation = () => (
       </div>
 
       <div className="row order-of-service">
-        <div className="six columns">
+        <section>
           <h3>Day</h3>
           <p>Arrive at the Chapel at 1pm</p>
           <hr/>
           <p>Drinks reception & jazz</p>
           <hr />
           <p>Wedding breakfast in the Radcliffe Room</p>
-        </div>
+        </section>
 
-        <div className="six columns">
+        <section>
           <h3>Evening</h3>
           <div className="evening">
             <p>Arrive at the Radcliffe Room at 7.30pm</p>
             <hr />
             <p>Canapés, drinks, casino & live music</p>
           </div>
-        </div>
+        </section>
       </div>
 
       <div className="row">
