@@ -138,33 +138,33 @@ form {
       .banner .banner__text-wrapper h1 {
         font-size: 48px; } }
 
-.invitation .order-of-service {
-  margin-bottom: 2em;
+.invitation {
   text-align: center; }
-  .invitation .order-of-service p {
+  .invitation p {
     text-align: center; }
-  .invitation .order-of-service .evening {
-    padding-top: 3em; }
-  .invitation .order-of-service h3 {
-    margin-bottom: 1em; }
-  @media (max-width: 850px) {
+  .invitation .order-of-service {
+    margin-bottom: 2em; }
     .invitation .order-of-service .evening {
-      padding: 0; }
-    .invitation .order-of-service .columns {
-      margin-bottom: 3em; }
-      .invitation .order-of-service .columns:last-child {
-        margin-bottom: 0; } }
-  .invitation .order-of-service section {
-    width: 50%;
-    float: left; }
+      padding-top: 3em; }
+    .invitation .order-of-service h3 {
+      margin-bottom: 1em; }
     @media (max-width: 850px) {
-      .invitation .order-of-service section {
-        float: none;
-        margin: 0 auto; } }
-
-.invitation .night-before p {
-  text-align: center;
-  font-style: italic; }
+      .invitation .order-of-service .evening {
+        padding: 0; }
+      .invitation .order-of-service .columns {
+        margin-bottom: 3em; }
+        .invitation .order-of-service .columns:last-child {
+          margin-bottom: 0; } }
+    .invitation .order-of-service section {
+      width: 50%;
+      float: left; }
+      @media (max-width: 850px) {
+        .invitation .order-of-service section {
+          float: none;
+          margin: 0 auto; } }
+  .invitation .night-before p {
+    text-align: center;
+    font-style: italic; }
 
 .venue__pic {
   margin-bottom: 24px; }
